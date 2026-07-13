@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Sikha ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+margin:0;
+overflow-x:hidden;
+color:white;
+text-align:center;
+background:linear-gradient(
+-45deg,
+#ff006e,
+#8338ec,
+#3a86ff,
+#06d6a0,
+#ffbe0b,
+#fb5607
+);
+background-size:400% 400%;
+animation:gradientFlow 15s ease infinite;
+}
+
+@keyframes gradientFlow{
+0%{
+background-position:0% 50%;
+}
+50%{
+background-position:100% 50%;
+}
+100%{
+background-position:0% 50%;
+}
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+padding:20px;
+}
+
+h1{
+font-family:'Dancing Script',cursive;
+font-size:4rem;
+margin-bottom:15px;
+animation:nameGlow 3s infinite alternate;
+}
+
+@keyframes nameGlow{
+from{
+text-shadow:
+0 0 10px #fff,
+0 0 20px #ff006e;
+}
+to{
+text-shadow:
+0 0 20px #fff,
+0 0 40px #8338ec,
+0 0 60px #3a86ff;
+}
+}
+
+.subtitle{
+font-size:1.3rem;
+max-width:800px;
+line-height:1.8;
+}
+
+.countdown{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+justify-content:center;
+margin-top:40px;
+}
+
+.box{
+width:140px;
+padding:25px;
+border-radius:25px;
+background:rgba(255,255,255,0.12);
+backdrop-filter:blur(15px);
+border:2px solid rgba(255,255,255,0.15);
+box-shadow:0 0 25px rgba(255,255,255,0.25);
+transition:0.4s;
+}
+
+.box:hover{
+transform:translateY(-10px) scale(1.05);
+box-shadow:
+0 0 20px #ff006e,
+0 0 40px #8338ec,
+0 0 60px #3a86ff;
+}
+
+.box span{
+display:block;
+font-size:2.5rem;
+font-weight:bold;
+}
+
+.gallery{
+padding:80px 20px;
+}
+
+.gallery h2{
+font-size:3rem;
+margin-bottom:40px;
+font-family:'Dancing Script',cursive;
+}
+
+.photos{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+max-width:1200px;
+margin:auto;
+}
+
+.photos img{
+width:100%;
+height:320px;
+object-fit:cover;
+border-radius:20px;
+transition:.4s;
+box-shadow:0 10px 25px rgba(0,0,0,.3);
+}
+
+.photos img:hover{
+transform:scale(1.05);
+}
+
+.message-section{
+padding:80px 20px;
+max-width:1000px;
+margin:auto;
+}
+
+.message{
+position:relative;
+padding:25px;
+margin:25px 0;
+border-radius:25px;
+font-size:1.1rem;
+line-height:1.8;
+background:rgba(255,255,255,0.12);
+backdrop-filter:blur(15px);
+border:2px solid rgba(255,255,255,0.2);
+overflow:hidden;
+box-shadow:0 10px 35px rgba(0,0,0,0.25);
+transition:0.4s;
+}
+
+.message::before{
+content:"";
+position:absolute;
+inset:-3px;
+background:linear-gradient(
+90deg,
+#ff006e,
+#8338ec,
+#3a86ff,
+#06d6a0,
+#ffbe0b,
+#ff006e
+);
+background-size:300% 300%;
+animation:borderGlow 6s linear infinite;
+z-index:-1;
+filter:blur(12px);
+}
+
+.message:hover{
+transform:translateY(-8px) scale(1.02);
+}
+
+@keyframes borderGlow{
+0%{
+background-position:0% 50%;
+}
+100%{
+background-position:300% 50%;
+}
+}
+
+.quote-box{
+font-size:1.8rem;
+font-family:'Dancing Script',cursive;
+padding:40px;
+margin:30px auto;
+max-width:900px;
+}
+
+footer{
+padding:50px 20px;
+font-size:1.1rem;
+}
+
+.heart{
+color:red;
+animation:beat 1s infinite;
+}
+
+@keyframes beat{
+50%{transform:scale(1.2);}
+}
+
+.floating{
+position:fixed;
+font-size:25px;
+animation:float 8s linear infinite;
+opacity:0.7;
+}
+
+@keyframes float{
+0%{
+transform:translateY(100vh);
+opacity:0;
+}
+10%{opacity:1;}
+100%{
+transform:translateY(-100px);
+opacity:0;
+}
+}
+
+.birthday{
+display:none;
+padding:100px 20px;
+}
+
+.birthday h1{
+font-size:5rem;
+}
+
+button{
+padding:12px 30px;
+border:none;
+border-radius:30px;
+font-size:18px;
+cursor:pointer;
+margin-top:20px;
+background:white;
+color:#ff4d88;
+font-weight:bold;
+}
+
+.glass-card{
+margin:20px;
+padding:40px;
+border-radius:35px;
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(20px);
+border:1px solid rgba(255,255,255,0.2);
+box-shadow:0 15px 40px rgba(0,0,0,0.25);
+}
+</style>
+</head>
+<body>
+
+<div class="hero glass-card">
+<h1>Happy Birthday Sikha ❤️</h1>
+
+<p class="subtitle">
+Counting down to the most beautiful day of the year —
+the day the world was blessed with your smile.
+</p>
+
+<div class="countdown">
+<div class="box"><span id="days">0</span>Days</div>
+<div class="box"><span id="hours">0</span>Hours</div>
+<div class="box"><span id="minutes">0</span>Minutes</div>
+<div class="box"><span id="seconds">0</span>Seconds</div>
+</div>
+
+<div class="quote-box" id="quote"></div>
+</div>
+
+<section class="gallery">
+<h2>Beautiful Memories of Sikha 🌸</h2>
+
+<div class="photos">
+<img src="1.jpg" alt="">
+<img src="2.jpg" alt="">
+<img src="3.jpg" alt="">
+<img src="4.jpg" alt="">
+<img src="5.jpg" alt="">
+<img src="6.webp" alt="">
+<img src="7.webp" alt="">
+<img src="8.jpg" alt="">
+</div>
+</section>
+
+<section class="message-section">
+
+<div class="message">
+Dear Sikha, your smile has a way of making ordinary days feel extraordinary.
+</div>
+
+<div class="message">
+You are elegance, kindness, strength, and beauty wrapped into one wonderful person.
+</div>
+
+<div class="message">
+Some people make the world brighter simply by being in it. You are one of those rare people.
+</div>
+
+<div class="message">
+Your grace is effortless, your heart is pure, and your presence is unforgettable.
+</div>
+
+<div class="message">
+Every memory with you becomes a treasure and every conversation becomes a beautiful story.
+</div>
+
+
+<div class="message">
+Thank you for being exactly who you are. The world is better because you are in it.
+</div>
+
+<div class="message">
+No matter how many stars fill the sky, your smile shines brighter.
+</div>
+
+<div class="message">
+You are not just beautiful in appearance; your heart makes you truly extraordinary.
+</div>
+
+
+</section>
+
+<div class="birthday" id="birthdayScreen">
+<h1>🎉 Happy Birthday Sikha 🎂</h1>
+<p style="font-size:1.5rem;">
+May your life be filled with endless happiness, success, laughter, love and beautiful memories.
+</p>
+<h2 style="margin-top:30px;">
+You mean more than words can ever express ❤️
+</h2>
+</div>
+
+<footer>
+Made with <span class="heart">❤️</span> for the most wonderful person — Sikha
+</footer>
+
+<script>
+
+const quotes=[
+"Your smile is my favorite sunshine. ☀️",
+"Beauty fades, but your kindness shines forever. 🌸",
+"You make the world brighter just by being yourself. ✨",
+"Some people are beautiful. You are beautiful and inspiring. 🌹",
+"Laakhon hain magar tumsa yahan kaun haseen hai?? 💕",
+"You are a blessing disguised as a friend. 🌷"
+];
+
+let q=0;
+const quote=document.getElementById("quote");
+
+function changeQuote(){
+quote.innerHTML=quotes[q];
+q=(q+1)%quotes.length;
+}
+changeQuote();
+setInterval(changeQuote,4000);
+
+const birthdayDate=new Date("July 23, 2026 00:00:00").getTime();
+
+const timer=setInterval(function(){
+
+const now=new Date().getTime();
+const distance=birthdayDate-now;
+
+const days=Math.floor(distance/(1000*60*60*24));
+const hours=Math.floor((distance%(1000*60*60*24))/(1000*60*60));
+const minutes=Math.floor((distance%(1000*60*60))/(1000*60));
+const seconds=Math.floor((distance%(1000*60))/1000);
+
+document.getElementById("days").innerHTML=days;
+document.getElementById("hours").innerHTML=hours;
+document.getElementById("minutes").innerHTML=minutes;
+document.getElementById("seconds").innerHTML=seconds;
+
+if(distance<0){
+clearInterval(timer);
+document.querySelector(".hero").style.display="none";
+document.getElementById("birthdayScreen").style.display="block";
+}
+},1000);
+
+function createHeart(){
+const heart=document.createElement("div");
+heart.classList.add("floating");
+heart.innerHTML=["❤️","🌸","✨","💖","🎂"][Math.floor(Math.random()*5)];
+heart.style.left=Math.random()*100+"vw";
+heart.style.fontSize=(20+Math.random()*30)+"px";
+heart.style.animationDuration=(5+Math.random()*5)+"s";
+document.body.appendChild(heart);
+
+setTimeout(()=>{
+heart.remove();
+},10000);
+}
+
+setInterval(createHeart,500);
+
+</script>
+
+</body>
+</html>
+```
